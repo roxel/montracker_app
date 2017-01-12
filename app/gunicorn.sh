@@ -1,0 +1,1 @@
+gunicorn production:application -b 127.0.0.1:8084 --log-file=server.log --error-logfile=error.log --access-logfile=access.log --access-logformat='%(t)s %(l)s %(h)s %(u)s "%(r)s" %(s)s %(b)s "%(f)s" %(T)s'
